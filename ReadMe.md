@@ -30,6 +30,31 @@ Details of the installation go here.
 
 3. Create the "MSTeams path" Constant and add the value "/api/response".
 
+## New to Microsoft Bots?
+1. Setup a sample bot with Bot Service
+https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
+
+2. Test the sample Bot in Web Chat
+https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-test-webchat
+
+3. Test the sample Bot in MS Teams with 1 on 1 chat.
+https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test
+
+4. In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
+https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
+
+A couple things of note:
+a. The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.
+
+<kbd>
+  <img src="need picture">
+</kbd>
+
+5. Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
+https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
+
+6. Now you have a working bot in teams you can customize it with the following information.
+
 
 ## Bot set up
 
