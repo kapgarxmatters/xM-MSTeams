@@ -55,13 +55,14 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
 
 6. Now you have a working bot in teams you can customize it with the following information.
 
-## Deploy bot from Github repo to Azure
+## Deploy app from Github repo to Azure
 1. Fork the sample repo.
 
-2. Login to Azure portal.  Create a new bot 
+2. Login to Azure portal.  Create a new bot.  This will create a new app service. 
 https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
 
-3. Follow directions below to setup continous deliver.
+3. Follow directions below to setup continous deliver at the app service level.
+https://docs.microsoft.com/en-us/azure/app-service/app-service-continuous-deployment#comments
 https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-continuous-deployment
 
 ## Deploy bot from Github repo to Node.js server (Google Cloud)
