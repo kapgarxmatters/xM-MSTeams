@@ -55,7 +55,7 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
 
 6. Now you have a working bot in teams you can customize it with the following information.
 
-## Deploy bot from Github repo
+## Deploy bot from Github repo to Azure
 1. Fork the sample repo.
 
 2. Login to Azure portal.  Create a new bot 
@@ -64,7 +64,19 @@ https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
 3. Follow directions below to setup continous deliver.
 https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-continuous-deployment
 
-## Bot set up
+## Deploy bot from Github repo to Node.js server
+1. Generate the MSTeams installation file by running "gulp" in the route directory.
+
+2. Host the files in a location and run using the following commands:
+
+```
+
+npm install
+npm start
+
+```
+
+## Specific AppId's, webhooks and credentials that need to be modified.
 
 1. Replace all instances of "********-****-****-****-************" with your microsoftAppId.
 
@@ -112,17 +124,6 @@ Example:
 https://xmatters-url.com/api/integration/1/functions/d0b41e9a-dc8b-4620-93ec-03e96f5cabf8/triggers
 
 Would be "d0b41e9a-dc8b-4620-93ec-03e96f5cabf8"
-
-```
-
-6. Generate the MSTeams installation file by running "gulp" in the route directory.
-
-7. Host the files in a location and run using the following commands:
-
-```
-
-npm install
-npm start
 
 ```
 
