@@ -178,6 +178,6 @@ npm run dev
 
 This will automatically restart the app when any files are changed.
 
-# GCloud
+
 
 
