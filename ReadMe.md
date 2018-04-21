@@ -64,7 +64,7 @@ https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
 3. Follow directions below to setup continous deliver.
 https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-continuous-deployment
 
-## Deploy bot from Github repo to Node.js server
+## Deploy bot from Github repo to Node.js server (Google Cloud)
 1. Generate the MSTeams installation file by running "gulp" in the route directory.
 
 2. Host the files in a location and run using the following commands:
@@ -75,6 +75,10 @@ npm install
 npm start
 
 ```
+3. or To deploy your own version run the following command:
+
+	gcloud app deploy --version <your version name> --no-promote
+	
 
 ## Specific AppId's, webhooks and credentials that need to be modified.
 
@@ -127,13 +131,20 @@ Would be "d0b41e9a-dc8b-4620-93ec-03e96f5cabf8"
 
 ```
 
-
-
 ## MS Teams set up
 
-1. Install the application produced in the previous step.
+1. In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
+https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
 
-2. Done.
+A couple things of note:
+The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.
+
+<kbd>
+  <img src="need picture">
+</kbd>
+
+2.Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
+https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
 
 
 # Testing
@@ -169,6 +180,4 @@ This will automatically restart the app when any files are changed.
 
 # GCloud
 
-To deploy your own version run the following command:
 
-	gcloud app deploy --version <your version name> --no-promote
